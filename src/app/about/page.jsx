@@ -10,8 +10,8 @@ const About = () => {
         <Image src='https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=600' fill={true} alt='lol' className={styles.img} />
 
         <div className={styles.imageText}>
-          <h1 className={styles.imageTitle}>Students Story</h1>
-          <h2 className={styles.imageDesc}>Students who have benifited</h2>
+          <h1 className={styles.imgTitle}>Students Story</h1>
+          <h2 className={styles.imgDesc}>Students who have benifited</h2>
 
         </div>
       </div>
