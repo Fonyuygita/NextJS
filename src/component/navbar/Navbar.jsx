@@ -2,8 +2,8 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
+import Toggle from "../darkModeToggle/Toggle"
 import styles from "./navbar.module.css"
-
 const Links = [
     {
         id: 1,
@@ -46,14 +46,20 @@ const Navbar = () => {
         <div className={styles.container}>
 
             <Link href="/" className={styles.logo}>GitaDev</Link>
-            <div className={styles.links}>{Links.map(link=>(
-                <Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link>
-        ))}
-        
-        <button className={styles.logout} onClick={()=>{
-            console.log("logout");
-        }}>Logout</button>
-        </div>
+
+            <div className={styles.links}>
+            <Toggle/>
+            {Links.map(link => (
+                
+                <Link key={link.id} href={link.url} className={styles.link}>{link.title}
+                
+                </Link>
+            ))}
+
+                <button className={styles.logout} onClick={() => {
+                    console.log("logout");
+                }}>Logout</button>
+            </div>
 
         </div>
     )

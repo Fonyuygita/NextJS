@@ -28,3 +28,17 @@ a{
   text-decoration: none;
   color: inherit;
 }
+.light{
+  background-color: white;
+  color: #111;
+}
+.dark{
+  background-color: #111;
+  color: #bbb;
+}
+
+/* give our theme animation */
+
+.Theme{
+  transition: 1s all ease;
+}
