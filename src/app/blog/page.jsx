@@ -42,3 +42,5 @@ console.log(data);
     })}
     </div>
     )}
+
+    export default Blog

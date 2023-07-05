@@ -3,6 +3,7 @@
 import React from 'react'
 import styles from "./page.module.css"
 import {useState, useEffect} from "react"
+import { useSession } from 'next-auth/react'
 
 
 const Dashboard = () => {
@@ -29,6 +30,9 @@ getData();
   },[])
 
   console.log(data)
+const session=useSession()
+console.log(session);
+
   return (
     <div className={styles.container}>Dashboard</div>
   )
